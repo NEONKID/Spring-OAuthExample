@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/test;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /console
+  thymeleaf:
+    cache: false
+    check-template-location: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:
+            client-secret:
+
+custom:
+  oauth2:
+    kakao:
+      client-id:
